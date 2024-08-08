@@ -16,7 +16,7 @@ const links: { label: string; href: string }[] = [
 export default function DashboardFeature() {
   return (
     <div>
-      <AppHero title="gm" subtitle="Say hi to your new Solana dApp." />
+      <AppHero title="gm" subtitle="This is a Solana DApp created By Me (Saurav). Go to Account to get some devnet sol airdrop. and then move on to User Messages Program to test out the Messaging app on the Blockchain" />
       <div className="max-w-xl mx-auto py-6 sm:px-6 lg:px-8 text-center">
         <div className="space-y-2">
           <p>Here are some helpful links to get you started.</p>
