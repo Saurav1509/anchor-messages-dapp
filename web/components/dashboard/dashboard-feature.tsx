@@ -3,6 +3,7 @@
 import { AppHero } from '../ui/ui-layout';
 
 const links: { label: string; href: string }[] = [
+  {label: 'Visit this codebase on Github', href: 'https://github.com/Saurav1509/anchor-messages-dapp'},
   { label: 'Solana Docs', href: 'https://docs.solana.com/' },
   { label: 'Solana Faucet', href: 'https://faucet.solana.com/' },
   { label: 'Solana Cookbook', href: 'https://solanacookbook.com/' },
