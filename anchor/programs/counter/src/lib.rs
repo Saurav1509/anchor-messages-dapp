@@ -8,7 +8,7 @@ const ANCHOR_DISCRIMINATOR: usize = 8;
 const PUBKEY_SIZE: usize = 32;
 const STRING_PREFIX_LENGTH: usize = 4;
 const MAX_NAME_LENGTH: usize = 10;
-const MAX_MESSAGE_LENGTH: usize = 20;
+const MAX_MESSAGE_LENGTH: usize = 60;
 
 #[program]
 pub mod anchor_user_message {

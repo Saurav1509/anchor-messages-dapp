@@ -16,7 +16,7 @@ export default function UserMessageFeature() {
       <AppHero
         title="User Messages"
         subtitle={
-          'Create a new account by clicking the "Create" button. The state of a account is stored on-chain and can be manipulated by calling the program\'s methods (Add new Message, Update your Message, and Delete the message).'
+          'Create a new account by clicking the "Create" button. The state of a account is stored on-chain and can be manipulated by calling the program\'s methods (Add new Message, Update your Message, and Delete the message). Just have a Solana Wallet like Phantom or Backpack. Get some devnet SOLs into your wallets and start sending messages. Share me your thoughts'
         }
       >
         <p className="mb-6">
