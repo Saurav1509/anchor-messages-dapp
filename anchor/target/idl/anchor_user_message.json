@@ -1,0 +1,202 @@
+{
+  "address": "BLMmDFCJ9GGATDR92GFS7VPbRHiedwy35PFtuaTKwVB8",
+  "metadata": {
+    "name": "anchor_user_message",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "add_user_message",
+      "discriminator": [
+        247,
+        97,
+        72,
+        111,
+        130,
+        192,
+        115,
+        179
+      ],
+      "accounts": [
+        {
+          "name": "user_message",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "arg",
+                "path": "name"
+              },
+              {
+                "kind": "account",
+                "path": "initializer"
+              }
+            ]
+          }
+        },
+        {
+          "name": "initializer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "delete_user_message",
+      "discriminator": [
+        191,
+        211,
+        200,
+        247,
+        249,
+        29,
+        120,
+        167
+      ],
+      "accounts": [
+        {
+          "name": "user_message",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "arg",
+                "path": "name"
+              },
+              {
+                "kind": "account",
+                "path": "initializer"
+              }
+            ]
+          }
+        },
+        {
+          "name": "initializer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "update_user_message",
+      "discriminator": [
+        139,
+        51,
+        230,
+        127,
+        243,
+        150,
+        69,
+        101
+      ],
+      "accounts": [
+        {
+          "name": "user_message",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "arg",
+                "path": "name"
+              },
+              {
+                "kind": "account",
+                "path": "initializer"
+              }
+            ]
+          }
+        },
+        {
+          "name": "initializer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "UserMessageState",
+      "discriminator": [
+        123,
+        0,
+        67,
+        151,
+        92,
+        126,
+        94,
+        193
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "NameTooLong",
+      "msg": "User name too long"
+    },
+    {
+      "code": 6001,
+      "name": "MessageTooLong",
+      "msg": "User Message too long"
+    }
+  ],
+  "types": [
+    {
+      "name": "UserMessageState",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
